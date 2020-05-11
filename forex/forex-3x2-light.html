@@ -1,0 +1,561 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>main-light</title>
+<style type="text/css">
+  @charset "utf-8";
+
+  body { font-family: Verdana; background: black; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;}
+
+.tickertop {grid-area: ticker1;}
+.chartstop1 {grid-area: chtop1; }
+.chartstop2 {grid-area: chtop2; }
+.chartstop3 {grid-area: chtop3; }
+.econcalendar {grid-area: ecalendar;}
+.chartsmiddle1 {grid-area: chmiddle1;}
+.chartsmiddle2 {grid-area: chmiddle2;}
+.chartsmiddle3 {grid-area: chmiddle3;}
+.marketoverview {grid-area: moverview;}
+.chartsbottom1 {grid-area: chbottom1;}
+.chartsbottom2 {grid-area: chbottom2;}
+.chartsbottom3 {grid-area: chbottom3;}
+.tickerbottom {grid-area: ticker2;}
+
+
+
+
+.grid-cointainer {
+  display: grid;
+  grid-template-areas: 
+    'ticker1 ticker1 ticker1 ticker1'
+    'chtop1 chtop2 chtop3 ecalendar'
+    'chmiddle1 chmiddle2 chmiddle3 moverview'
+    'chbottom1 chbottom2 chbottom3 moverview'
+    'ticker2 ticker2 ticker2 ticker2';
+  grid-auto-rows: auto 312px 312px 312px auto;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="grid-cointainer">
+
+  <div class="tickertop">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+      {
+      "symbols": [
+      {
+        "proName": "FX:AUDCAD",
+        "title": "AUD/CAD"
+      },
+      {
+        "proName": "FX:AUDCHF",
+        "title": "AUD/CHF"
+      },
+      {
+        "proName": "FX:AUDJPY",
+        "title": "AUD/JPY"
+      },
+      {
+        "proName": "FX:AUDNZD",
+        "title": "AUD/NZD"
+      },
+      {
+        "proName": "FX:AUDUSD",
+        "title": "AUD/USD"
+      },
+      {
+        "proName": "FX:CADCHF",
+        "title": "CAD/CHF"
+      },
+      {
+        "proName": "FX:CADJPY",
+        "title": "CAD/JPY"
+      },
+      {
+        "proName": "FX:CHFJPY",
+        "title": "CHF/JPY"
+      },
+      {
+        "proName": "FX:NZDJPY",
+        "title": "NZD/JPY"
+      }
+
+      ],
+      "colorTheme": "light",
+      "isTransparent": false,
+      "locale": "uk"
+      }
+      </script>
+      </div>
+    <!-- TradingView Widget END -->
+  </div>
+  <div class="chartstop1">
+    <!-- TradingView Widget BEGIN -->
+    <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget({
+    "autosize": true,
+    "symbol": "FX:USDCNH",
+    "interval": "15",
+    "timezone": "Europe/London",
+    "theme": "light",
+    "style": "1",
+    "toolbar_bg": "#000000",
+    "allow_symbol_change": true,
+    "studies":["WilliamsAlligator@tv-basicstudies"],
+    "hideideas": true,
+    "show_popup_button": true,
+    "popup_width": "1000",
+    "popup_height": "650"
+    });
+    </script>
+    <!-- TradingView Widget END -->
+  </div>
+  <div class="chartstop2">
+    <!-- TradingView Widget BEGIN -->
+    <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget({
+    "autosize": true,
+    "symbol": "FX:USDCAD",
+    "interval": "15",
+    "timezone": "Europe/London",
+    "theme": "light",
+    "style": "1",
+    "toolbar_bg": "#000000",
+    "allow_symbol_change": true,
+    "studies":["WilliamsAlligator@tv-basicstudies"],
+    "hideideas": true,
+    "show_popup_button": true,
+    "popup_width": "1000",
+    "popup_height": "650"
+    });
+    </script>
+    <!-- TradingView Widget END -->
+  </div>
+  <div class="chartstop3">
+    <!-- TradingView Widget BEGIN -->
+    <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget({
+    "autosize": true,
+    "symbol": "FX:USDCHF",
+    "interval": "15",
+    "timezone": "Europe/London",
+    "theme": "light",
+    "style": "1",
+    "toolbar_bg": "#000000",
+    "allow_symbol_change": true,
+    "studies":["WilliamsAlligator@tv-basicstudies"],
+    "hideideas": true,
+    "show_popup_button": true,
+    "popup_width": "1000",
+    "popup_height": "650"
+    });
+    </script>
+    <!-- TradingView Widget END -->
+  </div>
+  <div class="ecalendar">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+      {
+      "colorTheme": "light",
+      "isTransparent": false,
+      "width": "100%",
+      "height": "100%",
+      "locale": "uk",
+      "importanceFilter": "-1,0,1"
+      }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </div>
+  <div class="chmiddle1">
+    <!-- TradingView Widget BEGIN -->
+    <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget({
+    "autosize": true,
+    "symbol": "FX:USDJPY",
+    "interval": "15",
+    "timezone": "Europe/London",
+    "theme": "light",
+    "style": "1",
+    "toolbar_bg": "#000000",
+    "allow_symbol_change": true,
+    "studies":["WilliamsAlligator@tv-basicstudies"],
+    "hideideas": true,
+    "show_popup_button": true,
+    "popup_width": "1000",
+    "popup_height": "650"
+    });
+    </script>
+    <!-- TradingView Widget END -->
+  </div>
+  <div class="chmiddle2">
+    <!-- TradingView Widget BEGIN -->
+    <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget({
+    "autosize": true,
+    "symbol": "FX:USDHKD",
+    "interval": "15",
+    "timezone": "Europe/London",
+    "theme": "light",
+    "style": "1",
+    "toolbar_bg": "#000000",
+    "allow_symbol_change": true,
+    "studies":["WilliamsAlligator@tv-basicstudies"],
+    "hideideas": true,
+    "show_popup_button": true,
+    "popup_width": "1000",
+    "popup_height": "650"
+    });
+    </script>
+    <!-- TradingView Widget END -->
+  </div>
+  <div class="chmiddle3">
+    <!-- TradingView Widget BEGIN -->
+    <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget({
+    "autosize": true,
+    "symbol": "FX:GBPUSD",
+    "interval": "15",
+    "timezone": "Europe/London",
+    "theme": "light",
+    "style": "1",
+    "toolbar_bg": "#000000",
+    "allow_symbol_change": true,
+    "studies":["WilliamsAlligator@tv-basicstudies"],
+    "hideideas": true,
+    "show_popup_button": true,
+    "popup_width": "1000",
+    "popup_height": "650"
+    });
+    </script>
+    <!-- TradingView Widget END -->
+  </div>
+  <div class="marketoverview">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+  
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+    {
+    "colorTheme": "light",
+    "dateRange": "12m",
+    "showChart": false,
+    "locale": "uk",
+    "width": "100%",
+    "height": "100%",
+    "largeChartUrl": "",
+    "isTransparent": false,
+    "tabs": [
+      {
+      "title": "Indices",
+      "symbols": [
+        {
+          "s": "OANDA:SPX500USD",
+          "d": "S&P 500"
+        },
+        {
+          "s": "OANDA:NAS100USD",
+          "d": "Nasdaq 100"
+        },
+        {
+          "s": "FOREXCOM:DJI",
+          "d": "Dow 30"
+        },
+        {
+          "s": "TVC:NI225",
+          "d": "Nikkei 225"
+        },
+        {
+          "s": "INDEX:DEU30",
+          "d": "DAX Index"
+        },
+        {
+          "s": "INDEX:DEU30",
+          "d": "DAX Index"
+        },
+        {
+          "s": "INDEX:DEU30",
+          "d": "DAX Index"
+        },
+        {
+          "s": "INDEX:DEU30",
+          "d": "DAX Index"
+        },
+        {
+          "s": "INDEX:DEU30",
+          "d": "DAX Index"
+        },
+        {
+          "s": "INDEX:DEU30",
+          "d": "DAX Index"
+        },
+        {
+          "s": "OANDA:UK100GBP",
+          "d": "FTSE 100"
+        }
+      ],
+      "originalTitle": "Indices"
+    },
+    {
+      "title": "Commodities",
+      "symbols": [
+        {
+          "s": "TVC:USOIL",
+          "d": "WTI Crude oil"
+        },
+        {
+          "s": "CME:6E1!",
+          "d": "Euro"
+        },
+        {
+          "s": "COMEX:GC1!",
+          "d": "Gold"
+        },
+        {
+          "s": "NYMEX:CL1!",
+          "d": "Crude Oil"
+        },
+        {
+          "s": "NYMEX:NG1!",
+          "d": "Natural Gas"
+        },
+        {
+          "s": "CBOT:ZC1!",
+          "d": "Corn"
+        }
+      ],
+      "originalTitle": "Commodities"
+    },
+    {
+      "title": "Bonds",
+      "symbols": [
+        {
+          "s": "CME:GE1!",
+          "d": "Eurodollar"
+        },
+        {
+          "s": "CBOT:ZB1!",
+          "d": "T-Bond"
+        },
+        {
+          "s": "CBOT:UB1!",
+          "d": "Ultra T-Bond"
+        },
+        {
+          "s": "EUREX:FGBL1!",
+          "d": "Euro Bund"
+        },
+        {
+          "s": "EUREX:FBTP1!",
+          "d": "Euro BTP"
+        },
+        {
+          "s": "EUREX:FGBM1!",
+          "d": "Euro BOBL"
+        }
+      ],
+      "originalTitle": "Bonds"
+    },
+    {
+      "title": "Forex",
+      "symbols": [
+        {
+          "s": "FX:EURUSD"
+        },
+        {
+          "s": "FX:GBPUSD"
+        },
+        {
+          "s": "FX:USDJPY"
+        },
+        {
+          "s": "FX:USDCHF"
+        },
+        {
+          "s": "FX:AUDUSD"
+        },
+        {
+          "s": "FX:USDCAD"
+        }
+      ],
+      "originalTitle": "Forex"
+      },
+      {
+      "title": "Commodities",
+      "symbols": [
+        {
+          "s": "TVC:USOIL",
+          "d": "WTI Crude oil"
+        },
+        {
+          "s": "CME:6E1!",
+          "d": "Euro"
+        },
+        {
+          "s": "COMEX:GC1!",
+          "d": "Gold"
+        },
+        {
+          "s": "NYMEX:CL1!",
+          "d": "Crude Oil"
+        },
+        {
+          "s": "NYMEX:NG1!",
+          "d": "Natural Gas"
+        },
+        {
+          "s": "CBOT:ZC1!",
+          "d": "Corn"
+        }
+      ],
+      "originalTitle": "Commodities"
+    }
+    ]
+    }
+    </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </div>
+  <div class="chartsbottom1">
+    <!-- TradingView Widget BEGIN -->
+    <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget({
+    "autosize": true,
+    "symbol": "FX:GBPJPY",
+    "interval": "15",
+    "timezone": "Europe/London",
+    "theme": "light",
+    "style": "1",
+    "toolbar_bg": "#000000",
+    "allow_symbol_change": true,
+    "studies":["WilliamsAlligator@tv-basicstudies"],
+    "hideideas": true,
+    "show_popup_button": true,
+    "popup_width": "1000",
+    "popup_height": "650"
+    });
+    </script>
+    <!-- TradingView Widget END -->
+  </div>
+  <div class="chartsbottom2">
+    <!-- TradingView Widget BEGIN -->
+    <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget({
+    "autosize": true,
+    "symbol": "FX:EURGBP",
+    "interval": "15",
+    "timezone": "Europe/London",
+    "theme": "light",
+    "style": "1",
+    "toolbar_bg": "#000000",
+    "allow_symbol_change": true,
+    "studies":["WilliamsAlligator@tv-basicstudies"],
+    "hideideas": true,
+    "show_popup_button": true,
+    "popup_width": "1000",
+    "popup_height": "650"
+    });
+    </script>
+    <!-- TradingView Widget END -->
+  </div>
+  <div class="chartsbottom3">
+    <!-- TradingView Widget BEGIN -->
+    <script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget({
+    "autosize": true,
+    "symbol": "FX:EURUSD",
+    "interval": "15",
+    "timezone": "Europe/London",
+    "theme": "light",
+    "style": "1",
+    "toolbar_bg": "#000000",
+    "allow_symbol_change": true,
+    "studies":["WilliamsAlligator@tv-basicstudies"],
+    "hideideas": true,
+    "show_popup_button": true,
+    "popup_width": "1000",
+    "popup_height": "650"
+    });
+    </script>
+    <!-- TradingView Widget END -->
+  </div>
+  <div class="tickerbottom">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+      {
+      "symbols": [
+      {
+        "proName": "FX:EURAUD",
+        "title": "EUR/AUD"
+      },
+      {
+        "proName": "FX:EURCAD",
+        "title": "EUR/CAD"
+      },
+      {
+        "proName": "FX:EURCHF",
+        "title": "EURCHF"
+      },
+      {
+        "proName": "FX:GBPNZD",
+        "title": "GBP/NZD"
+      },
+      {
+        "proName": "FX:EURJPY",
+        "title": "EUR/JPY"
+      },
+      {
+        "proName": "FX:EURNOK",
+        "title": "EUR/NOK"
+      },
+      {
+        "proName": "FX:EURNZD",
+        "title": "EUR/NZD"
+      },
+      {
+        "proName": "FX:EURSEK",
+        "title": "EUR/SEK"
+      },
+      {
+        "proName": "FX:NZDCHF",
+        "title": "NZD/CHF"
+      }
+
+      ],
+      "colorTheme": "light",
+      "isTransparent": false,
+      "locale": "uk"
+      }
+      </script>
+      </div>
+    <!-- TradingView Widget END -->
+  </div>
+</div>
+
+
+</body>
+</html>
