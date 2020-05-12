@@ -1,0 +1,89 @@
+/*This is main css style */
+
+
+@charset "utf-8";
+/*Global css for the whole website */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/*Top navigation menu - DARK version*/
+#top-navigation-menu-dark {
+	width: 100%; 
+	height: 30px; 
+	margin: 0;
+	z-index: 99; 
+	position: relative; 
+	background-color: #131722;
+}
+
+.navigation {
+	height: 30px;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+
+}
+.navigation li {
+	height: auto;
+	float: left;  
+	text-align: center; 
+	list-style: none;  
+	font: normal bold 13px/1em Arial, Verdana, Helvetica;  
+	padding: 0;
+	margin: 0;
+	background-color: #131722;
+}
+ 
+.navigation a {
+	padding: 7px 0;  
+	text-decoration: none; 
+	color: white; 
+	display: block;
+}
+.navigation li:hover, a:hover {
+	background-color: #394566;
+}
+
+.navigation li ul{
+	display: none;
+	height: auto;									
+	margin: 0; 
+	padding: 0; 
+}
+
+.navigation li:hover ul{
+	display: block;
+}
+
+.navigation li ul li{
+	background-color: #131722;
+}
+
+.navigation li ul li a:hover{
+	background-color: #394566;
+}
+
+
+/*2x2 William's Alligator scalping strategy - DARK version */
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'Ncontainer Ncontainer Ncontainer'
+        'Ltop Mtop Rtop'
+        'Lbottom Mbottom Rbottom';
+    grid-auto-rows: 30px auto auto;
+    height: 100vh;
+	width: 100vw;
+    background: #131722;
+}
+
+.top-navigation-menu-dark{grid-area: Ncontainer;}
+.lefttop {grid-area: Ltop; }
+.middletop {grid-area: Mtop; }
+.righttop {grid-area: Rtop; }
+.leftbottom {grid-area: Lbottom; }
+.middlebottom {grid-area: Mbottom; }
+.rightbottom {grid-area: Rbottom; }
